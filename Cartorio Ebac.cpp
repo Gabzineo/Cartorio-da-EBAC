@@ -84,7 +84,7 @@ char conteudo[200];
 	system("pause");
 }
 
-int deleta()
+int deletar()
 {
 	char cpf[40];
 	
@@ -127,8 +127,9 @@ int main(){
 		printf("|\t 1 - Registrar nomes\t\t|\n");
 		printf("|\t 2 - Consultar nomes\t\t|\n");
 		printf("|\t 3 - Deletar nomes\t\t|\n");
+		printf("|\t 4 - Sair do Sistema\t\t|\n");
 		printf("=========================================\n\n");
-		printf("Opção: ");
+		//printf("Opção: ");
 
 	scanf("%d", &opcao);
 	system("cls");
@@ -146,6 +147,11 @@ int main(){
 		
 		case 3:
 		deletar();
+		break;
+		
+		case 4:
+		printf("Obrigado por utilizar o sistema");
+		return 0;
 		break;
 		
 		default: printf("!!ERRO!! !!ERRO!! !!ERRO!! !!ERRO!!\n");
